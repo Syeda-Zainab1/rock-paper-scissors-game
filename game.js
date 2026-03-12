@@ -42,7 +42,7 @@ drawGame();
     if(userChoice==="rock"){
         userWin=compChoice==="paper"? false: true;
     } else if(userChoice==="paper"){
-        userWin=compChoice==="sciccors"?fals:true;
+        userWin=compChoice==="scissors"?false:true;
     }else{
         //rock,paper
         userWin=compChoice==="rock"?false:true;
@@ -56,4 +56,5 @@ choices.forEach((choice) => {
         const userChoice=choice.getAttribute("id");
            playGame(userChoice);
     })
+
 });
